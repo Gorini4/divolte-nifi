@@ -20,6 +20,7 @@ services:
   divolte:
     image: divthis/divolte
     environment:
+      DIVOLTE_KAFKA_ENABLED: true
       DIVOLTE_KAFKA_BROKER_LIST: kafka:9092
     ports:
       - 8290:8290
